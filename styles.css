@@ -492,6 +492,34 @@ nav {
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
 }
 
+.contact-links {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-email,
+.contact-linkedin {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-email a,
+.contact-linkedin a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.contact-email a:hover,
+.contact-linkedin a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
 /* Footer */
 footer {
     text-align: center;
