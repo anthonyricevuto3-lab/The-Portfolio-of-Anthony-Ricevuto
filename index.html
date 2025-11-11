@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Ricevuto | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">AR</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-banner">
+                <img src="_MG_2227-PANO.JPG" alt="Road trip panorama" class="hero-banner-image">
+            </div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Anthony Ricevuto">Anthony Ricevuto</h1>
+                <p class="subtitle">Developer • Creator • Innovator</p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="profile-image-container">
+                        <img src="IMG_3967.jpg" alt="Anthony Ricevuto" class="profile-image">
+                    </div>
+                    <div class="about-card">
+                        <p class="bio-text">
+                            Hello, I'm Anthony Ricevuto — a Computer Science student at California State University, Long Beach 
+                            who uses technical problem-solving in collaboration with creativity and exploration. 
+                            Building systems that work at the intersection of data and physics and intelligence
+                             — from predicting risks of satellite debris to finding anomalies on an aircraft before anything happens.
+                              What sets me apart is not merely 
+                                 the code — but the attitude. The discipline, poise, and tactics I developed while playing college
+                                  baseball now follow me into engineering — meticulous under pressure, team-based at its core and
+                                   always getting better. You will usually find me jamming out on the guitar, taking my dog to the
+                                    beach or road-tripping through national parks with a backpack and camera. Those moments outside
+                                     — on trails or solving problems in the wild — remind me that engineering isn't just about 
+                                     technology; it's also about building tools that allow us to explore, understand and push ourselves.
+                                     I want to build at the intersection of software, data and discovery: systems that do something meaningful
+                           </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="projects-background">
+                <img src="_MG_1802_Original.jpg" alt="Stars background" class="projects-bg-image">
+            </div>
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-number">01</div>
+                        <h3 class="project-title">Pre Flight Anomaly Detection</h3>
+                        <p class="project-description">
+                            Developed and deployed a real-time aircraft sensor monitoring system using
+                             Azure Functions and Python that performs dynamic anomaly detection on critical
+                              flight parameters. The publicly accessible REST API uses Median Absolute Deviation 
+                              statistical analysis to identify anomalous readings in RPM, temperature, pressure,
+                               and voltage data. Features dynamic model retraining and provides comprehensive normal 
+                               operating range calculations for aviation safety applications.
+                        </p>
+                        <a href="https://anthonyricevuto3-lab.github.io/Pre-Flight-Anomaly-Detection/" class="project-link" target="_blank">
+                            View Project
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">Space Debris Risk Assessment</h3>
+                        <p class="project-description">
+                            Developed a system to assess collision risk from orbital debris using real-time Two-Line
+                             Element (TLE) data. Parsed and propagated satellite trajectories with SGP4, applied a 
+                             Kalman filter for state estimation, and trained a Random Forest classifier to label debris
+                              objects by collision risk level based on position and velocity. Enabled automated downloading,
+                               processing, and classification of space debris from CelesTrak.
+                        </p>
+                        <a href="https://space-debris-risk-assessment.com/" class="project-link" target="_blank">
+                            View Project
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-text">Interested in collaborating or have a question?</p>
+                    <a href="mailto:AnthonyRicevuto3@gmail.com" class="contact-button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Anthony Ricevuto. All rights reserved.</p>
+    </footer>
+</body>
+</html>
