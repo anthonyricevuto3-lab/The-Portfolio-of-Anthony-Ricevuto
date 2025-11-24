@@ -398,6 +398,23 @@ nav {
     transform: translateX(5px);
 }
 
+.project-card.coming-soon {
+    position: relative;
+    opacity: 0.85;
+}
+
+.coming-soon-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
 /* Gallery Section */
 .gallery {
     padding: 8rem 0;
