@@ -65,50 +65,160 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-number">01</div>
-                        <h3 class="project-title">Pre Flight Anomaly Detection</h3>
+                        <p class="project-org">Long Beach State Baseball · Dirtbags Data Team</p>
+                        <h3 class="project-title">TrackMan Baseball Analytics Platform</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">pandas</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">watchdog</span>
+                            <span class="tech-tag">pytest</span>
+                        </div>
                         <p class="project-description">
-                            Developed and deployed a real-time aircraft sensor monitoring system using
-                             Azure Functions and Python that performs dynamic anomaly detection on critical
-                              flight parameters. The publicly accessible REST API uses Median Absolute Deviation 
-                              statistical analysis to identify anomalous readings in RPM, temperature, pressure,
-                               and voltage data. Features dynamic model retraining and provides comprehensive normal 
-                               operating range calculations for aviation safety applications.
+                            End-to-end pitching analytics platform that converts raw TrackMan ball-tracking CSVs into automated, coach-ready PDF reports — processing 7,400+ pitches across the 2026 season with zero manual data handling.
                         </p>
-                        <a href="https://anthonyricevuto3-lab.github.io/Pre-Flight-Anomaly-Detection/" class="project-link" target="_blank">
-                            View Project
-                            <span class="arrow">→</span>
-                        </a>
+                        <div class="project-detail">
+                            <p class="project-detail-label">What I Built</p>
+                            <ul class="project-detail-list">
+                                <li>Schema validation layer and shared metrics library (whiff %, contact quality, movement, custom inning-success model)</li>
+                                <li>Watchdog file-drop pipeline that regenerates player profiles and postgame reports automatically</li>
+                                <li>Flask web app with drag-and-drop upload for non-technical coaching staff</li>
+                            </ul>
+                        </div>
+                        <div class="project-detail">
+                            <p class="project-detail-label">Results</p>
+                            <ul class="project-detail-list">
+                                <li>Same-night delivery of cumulative, postgame, and team-wide master reports</li>
+                                <li>25+ outings tracked per pitcher with persistent JSON-backed profiles</li>
+                                <li>14 internal docs; pytest coverage on the metrics library</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/anthonyricevuto3-lab/Dirtbags-Data-Team" class="project-link" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-number">02</div>
-                        <h3 class="project-title">Space Debris Risk Assessment</h3>
+                        <h3 class="project-title">Pre-Flight Anomaly Detection</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Azure Functions</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">pytest</span>
+                        </div>
                         <p class="project-description">
-                            Developed a system to assess collision risk from orbital debris using real-time Two-Line
-                             Element (TLE) data. Parsed and propagated satellite trajectories with SGP4, applied a 
-                             Kalman filter for state estimation, and trained a Random Forest classifier to label debris
-                              objects by collision risk level based on position and velocity. Enabled automated downloading,
-                               processing, and classification of space debris from CelesTrak.
+                            Deployed Azure Function API that flags anomalous aircraft sensor readings using median and Median Absolute Deviation (MAD) statistics, with a public demo frontend and structured JSON responses. Engineered to align with NASA software engineering requirements — NPR 7150.2, NASA-STD-8739.8, NASA Secure Coding guidance, and the NASA/JPL Power of Ten rules.
                         </p>
-                        <a href="https://space-debris-risk-assessment.com/" class="project-link" target="_blank">
-                            View Project
-                            <span class="arrow">→</span>
-                        </a>
+                        <div class="project-detail">
+                            <p class="project-detail-label">What I Built</p>
+                            <ul class="project-detail-list">
+                                <li>REST API processing up to 10,000 readings per request on RPM, temperature, pressure, and voltage</li>
+                                <li>Modular Python package with transport-agnostic anomaly detection logic</li>
+                                <li>NASA-aligned engineering docs with traceable requirements, secure-coding controls, and a compliance matrix</li>
+                                <li>Demo frontend and CI gates for linting, type checking, and unit tests</li>
+                            </ul>
+                        </div>
+                        <div class="project-detail">
+                            <p class="project-detail-label">Results</p>
+                            <ul class="project-detail-list">
+                                <li>Live deployed Azure Function with working public demo</li>
+                                <li>Returns normal operating ranges, summary stats, and flagged anomalies per feature</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://anthonyricevuto3-lab.github.io/Pre-Flight-Anomaly-Detection/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://github.com/anthonyricevuto3-lab/Pre-Flight-Anomaly-Detection" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-number">03</div>
-                        <h3 class="project-title">Neil deGrasse Tyson AI Chatbot</h3>
+                        <h3 class="project-title">Space Debris Risk Assessment</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SGP4</span>
+                            <span class="tech-tag">scikit-learn</span>
+                        </div>
                         <p class="project-description">
-                            An interactive AI chatbot powered by OpenAI that emulates the speaking style, knowledge, 
-                            and enthusiasm of renowned astrophysicist Neil deGrasse Tyson. Engages users in conversations 
-                            about space, science, and the cosmos with the characteristic wit and educational approach 
-                            that Neil is famous for.
+                            Hybrid physics and ML system that ingests CelesTrak TLE data, propagates orbits with SGP4, and outputs ranked reentry risk scores via a modular Flask REST API and dashboard.
                         </p>
-                        <a href="https://neil-degrasse-tyson-ai-chatbot.com/" class="project-link" target="_blank">
-                            View Project
-                            <span class="arrow">→</span>
-                        </a>
+                        <div class="project-detail">
+                            <p class="project-detail-label">What I Built</p>
+                            <ul class="project-detail-list">
+                                <li>Flask backend with separated routes, services, models, TLE caching, and API validation</li>
+                                <li>Ensemble ML pipeline (Random Forest, Gradient Boosting, Neural Networks) over SGP4-derived features</li>
+                                <li>Batch processing for 598+ debris objects from the Cosmos 2251 catalog</li>
+                            </ul>
+                        </div>
+                        <div class="project-detail">
+                            <p class="project-detail-label">Results</p>
+                            <ul class="project-detail-list">
+                                <li>Single-satellite analysis in under 100 ms; full debris-group processing in under 2 minutes</li>
+                                <li>Demonstrates how orbital telemetry converts into ranked risk scores from real TLE data</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://space-debris-risk-assessment.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://github.com/anthonyricevuto3-lab/Space-Debris-Risk-Assessment" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-number">04</div>
+                        <h3 class="project-title">Neil deGrasse Tyson AI Chatbot</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Azure</span>
+                        </div>
+                        <p class="project-description">
+                            RAG-powered science chatbot with a FastAPI backend, FAISS vector retrieval over NDT interviews and writings, and a deployed React frontend with persona-controlled responses.
+                        </p>
+                        <div class="project-detail">
+                            <p class="project-detail-label">What I Built</p>
+                            <ul class="project-detail-list">
+                                <li>Document ingestion pipeline with chunking, OpenAI embeddings, and FAISS semantic retrieval</li>
+                                <li>RAG chain with conversation memory and custom NDT persona system prompt</li>
+                                <li>Docker containerization and CI/CD to Azure Container Apps and Static Web Apps</li>
+                            </ul>
+                        </div>
+                        <div class="project-detail">
+                            <p class="project-detail-label">Results</p>
+                            <ul class="project-detail-list">
+                                <li>Full-stack deployment from ingestion through retrieval, generation, and production hosting</li>
+                                <li>Verifiable RAG architecture in <code>backend/rag/</code> with document corpus and vector index</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://neil-degrasse-tyson-ai-chatbot.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://github.com/anthonyricevuto3-lab/Neil-deGrasse-Tyson-Chatbot" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

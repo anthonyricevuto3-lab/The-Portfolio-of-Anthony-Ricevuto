@@ -317,8 +317,8 @@ nav {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
 }
 
 .project-card {
@@ -363,16 +363,91 @@ nav {
     margin-bottom: 1rem;
 }
 
+.project-org {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
 .project-title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: var(--text-color);
 }
 
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    background: rgba(102, 126, 234, 0.15);
+    border: 1px solid rgba(102, 126, 234, 0.35);
+    color: rgba(224, 224, 224, 0.9);
+}
+
 .project-description {
     color: rgba(224, 224, 224, 0.8);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     line-height: 1.7;
+}
+
+.project-detail {
+    margin-bottom: 1rem;
+}
+
+.project-detail-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+}
+
+.project-detail-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-detail-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+    color: rgba(224, 224, 224, 0.75);
+    line-height: 1.5;
+}
+
+.project-detail-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.project-detail-list code {
+    font-size: 0.85em;
+    color: var(--accent-color);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .project-link {
@@ -385,9 +460,17 @@ nav {
     transition: all 0.3s ease;
 }
 
+.project-link-secondary {
+    color: rgba(224, 224, 224, 0.7);
+}
+
 .project-link:hover {
     color: var(--accent-color);
     gap: 1rem;
+}
+
+.project-link-secondary:hover {
+    color: var(--primary-color);
 }
 
 .arrow {
